@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Us</title>
+    <link rel="stylesheet" href="src/about.css">
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <section id="navigation">
+        <div class="navbar">
+            <div class="navbar-left">
+                <h1>Mpacts</h1>
+            </div>
+            <div class="navbar-right">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="#footer">Contact Us</a></p>
+                <p><a href="services.html">Services</a></p>
+                <button class="nav-btn"><a href="#book-appointment">Book an Appointment</a></button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="about">
+            <div class="about-title">
+                <h1>About Us</h1>
+            </div>
+            <div class="about-content">
+                <p>Mpacts is a consulting firm that provides project management services to organizations. We help organizations to improve their project performance by providing advice on project management, team building, and organizational effectiveness. Our team of experts has years of experience in project management and has helped many organizations to achieve their project goals. We work closely with our clients to understand their needs and provide customized solutions that meet their specific requirements. Our goal is to help organizations to achieve success by improving their project performance and delivering results that exceed their expectations.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="images/image.jpg" alt="VTCS-Image">
+            </div>
+            <div class="main-content">
+                <h1>Meet the Visionary</h1>
+                <p><strong>V T Chandra Sekhar Rao</strong> is the founder of Mpacts. Mpacts mission is to help project owners, consultants and Contractors to achieve efficiency and excellence in project execution</p>
+                <li>Improving the project management work processes to bring a degree of predictability and higher operation efficiency</li>
+                <li>Developing Project management talent to lead domestic and international projects</li>
+                <li>Establishing methods and processes to improve project portfolio performance</li>
+                <li>Empowering business heads for establishing governance and discipline of execution on the projects bid and executed by the business.</li>
+                <a href="https://vtcsrao.in">
+                    <button class="main-btn">Know More</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="more-about">
+            <h1>The Mastermind Behind Mpacts</h1>
+            <h2>Hardwork.. Resellience.. Success</h2>
+            <p class="onee">V T Chandra Sekhar Rao is well known for his rich knowledge in mega project execution and his contribution to project management education. He retired as the Dean of the L&T Institute of Project Management (IPM), with ISO 21001 campuses in Vadodara and Chennai.</p>
+            <p class="twoo">Mr Rao has passion for teaching. After graduation in Civil Engineering from JNTU Kakinada in 1982, Mr. Rao started his project professional career as an assistant lecturer in MVSR Engineering in Hyderabad, followed by a decade long career in design engineering and project management in MECON.</p>
+            <p class="thre">In his four decades of rich professional experience, Mr. Rao executed large EPC and EPCM Mega projects of sizes up to $6Bn related to energy and infrastructure sectors and provided guidance to several project managers, engineering managers and construction managers.</p>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-card1">
+                <h1>About Us</h1>
+                <p>Mpacts mission is to help project owners, consultants and Contractors to achieve efficiency and excellence in project Management and Executive Coaching</p>
+            </div>
+            <div class="footer-card2">
+                <div class="h1-class">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="mail-class">
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:mpacts@gmail.com">mpacts@gmail.com</a></p>
+                </div>
+                <div class="phone-class">
+                    <i class="fa fa-phone"></i>
+                    <p><a href="tel:+91 8179560468">+91 9940636898</a></p>
+                </div>
+                <div class="youtube-class">
+                    <i class="fa fa-youtube"></i>
+                    <p><a href="https://www.youtube.com/channel/UC9Z1X1Zv6e1J1YX2Zz9vz1w">Mpacts</a></p>
+                </div>
+                <div class="linkedin-class">
+                    <i class="fa fa-linkedin"></i>
+                    <p><a href="https://www.youtube.com/channel/UCEpnj9NHhpxgVZWL1uGjGuw">Linkedin-Mpacts</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <h1>Copyright@Mpacts</h1>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1
+            };
+        
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+        
+            document.querySelectorAll('.about, .main-container, .image img, .main-content, .more-about, .main-btn').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

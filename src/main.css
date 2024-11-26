@@ -1,1 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin:ital,wght@0,400..700;1,400..700&family=Faculty+Glyphic&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+    background-color: #000000e5;
+    margin : 0;
+    border : o;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    color : white;
+    background-color: rgba(0, 0, 0, 0.96);
+    display: flex;
+    margin:0;
+    border:0;
+    flex-direction: row;
+    padding-left : 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    height: auto;
+    opacity: 0;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items : center;
+    opacity: 0;
+}
+
+.navbar-left {font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    opacity: 0;
+}
+
+.navbar-right a {
+    color: white;
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.nav-btn {
+    background-color: hsl(210, 74%, 51%);
+    color: black;
+    border: none;
+    padding: 10px 6px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.navbar-right a:hover {
+    color: hsl(210, 74%, 51%);
+    text-decoration: underline;
+}
+
+.nav-btn a {
+    color : white;
+    font-family : "montserrat", sans-serif;
+    font-size : 14px;
+    font-weight : 500;
+    width : 70%;
+}
+
+.nav-btn:hover {
+    background-color: hwb(230 15% 13%);
+    color: white;
+}
+
+.nav-btn:hover a {
+    color : white;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.2s ease-out forwards;
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+.carousel-container {
+    display: flex;
+    color : white;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items : center;
+    padding-left : 50px;
+    padding-top : 100px;
+    padding-bottom: 50px;
+    opacity: 0;
+}
+
+.carousel-content {
+    color : white;
+    width : 59%;
+    height : auto;
+    opacity: 0;
+}
+
+.carousel-content h1 {
+    font-family: "DM Sans", Sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.1em;
+    letter-spacing: -0.5px;
+    color: #0ab5b5;
+    margin: 0;
+    padding-top : 50px;
+    padding-bottom : 20px;
+    opacity: 0;
+}
+
+.carousel-content h2 {
+    color: #FFFFFF;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 58px;
+    line-height: 1.1em;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    border : 0px;
+    margin : 0px 0px;
+    padding-bottom : 20px;
+    opacity: 0;
+}
+
+.carousel-content p {
+    color: #FFFFFF;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 21px;
+    line-height: 1.3em;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+    border : 0px;
+    margin-top : 0px;
+    opacity: 0;
+}
+
+.who-we-container {
+    display: flex;
+    color : white;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding : 40px;
+    margin : 60px 100px 50px 100px;
+    opacity : 0;
+}
+
+.who-image img {
+    width : 90%;
+    height : auto;
+    border-radius : 10px;
+}
+
+.who-image img:hover {
+    box-shadow: 0 4px 8px 0 hsla(209, 100%, 49%, 0.922), 0 6px 20px 0 hsla(209, 100%, 49%, 0.922);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.who-we-content {
+    width : 80%;
+    padding-left: 20px;
+    opacity : 0;
+}
+
+.who-we-container h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top : 5px;
+    opacity : 0;
+
+}
+
+.who-we-container h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color : hwb(209 21% 13%);
+    font-weight: 650;
+    margin-top : 0px;
+    margin-bottom: 15px;
+    opacity: 0;
+}
+
+.who-we-container p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 370;
+    line-height: 1.4em;
+    margin-top : 0px;
+    opacity: 0;
+}
+
+.services-container {
+    width: 95%;
+    margin-top : 60px;
+    margin-bottom : 60px;
+    margin-left : auto;
+    margin-right: auto;
+    color : #fffffff6;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-head {
+    font-family: "Dan Sans", sans-serif;
+    font-size: 48px;
+    color : rgba(255, 255, 255, 0.963);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-card {
+    width: 300px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.3em;
+    border: 1px solid hwb(0 87% 13% / 0.458);
+    background-color: hwb(0 59% 40% / 0.057);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.256), 0 6px 20px 0 hwb(0 0% 100% / 0.245);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 8px 0 hsla(209, 100%, 49%, 0.922), 0 6px 20px 0 hsla(209, 100%, 49%, 0.922);
+    animation: fadeIn 1s ease-in-out;
+}
+.service-btn {
+    background-color: #0081FB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 20px;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: bold;
+    padding-top: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-btn a {
+    color: white;
+    text-decoration: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-card i {
+    font-size: 35px;
+    color: #0081FB;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-card p {
+    padding-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-card h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-top : 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.why-us-container {
+    display: flex;
+    color : white;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding : 40px;
+    margin : 60px 100px 50px 100px;
+}
+
+.why-image {
+    width : 60%;
+    height: auto;
+    padding-right : 20px;
+}
+
+.why-image img {
+    width : 100%;
+    height : auto;
+    border-radius : 10px;
+}
+
+.why-image img:hover {
+    box-shadow: 0 4px 8px 0 hsla(209, 100%, 49%, 0.922), 0 6px 20px 0 hsla(209, 100%, 49%, 0.922);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.why-us-content {
+    width : 80%;
+    padding-left: 50px;
+}
+
+.why-us-container h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top : 5px;
+
+}
+
+.why-us-container h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 29px;
+    color : hwb(209 21% 13%);
+    font-weight: 650;
+    margin-top : 0px;
+    margin-bottom: 15px;
+}
+
+.why-us-container p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 370;
+    line-height: 1.4em;
+    width : 75%;
+    margin-top : 0px;
+}
+
+.appointment-container {
+    padding: 20px;
+    color : white;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #7170706a;
+    max-width: 450px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.appointment-container:hover {
+    box-shadow: 0 4px 8px 0 hsla(209, 100%, 49%, 0.922), 0 6px 20px 0 hsla(209, 100%, 49%, 0.922);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.appointment-head {
+    text-align: center;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 40px;
+    line-height: 1.1em;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+form legend {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 370;
+    font-weight: 450;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out;
+}
+
+form label {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"] {
+    width: 100%;
+    background-color: hwb(0 33% 67% / 0.656);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid hsl(0, 3%, 53%);
+    border-radius: 15px;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in-out;
+}
+
+form .two-cols {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+form .two-cols label {
+    flex: 1;
+}
+
+form .inline {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+form .inline label {
+    flex: 1;
+}
+
+form .btns {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+    background-color: hwb(0 4% 96% / 0.982);
+    color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.footer-container {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    display: flex;
+    color :hwb(0 84% 14%);
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top:20px;
+    padding-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+.footer-card1 {
+    width : 28%;
+}
+
+.footer-card1 p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 370;
+    line-height: 1.4em;
+    padding-top : 1px;
+}
+
+.footer-card2 {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.footer-card2 .mail-class,
+.footer-card2 .phone-class,
+.footer-card2 .youtube-class,
+.footer-card2 .linkedin-class {
+    display: flex;
+    flex-direction: row;
+}
+
+.mail-class .phone-class
+.youtube-class .linkedin-class {
+    padding-top : 5px;
+    padding-bottom: 5px;
+}
+.mail-class i {
+    align-content: center;
+    padding-right : 20px;
+}
+
+.phone-class i {
+    align-content: center;
+    padding-right : 20px;
+}
+
+.youtube-class i {
+    align-content: center;
+    padding-right: 20px;
+}
+
+.linkedin-class i {
+    align-content: center;
+    padding-right: 20px;
+}
+
+.mail-class p a {
+    color: hwb(0 84% 14%);
+    text-decoration: none;
+}
+
+.phone-class p a {
+    color: hwb(0 84% 14%);
+    text-decoration: none;
+}
+
+.youtube-class p a {
+    color: hwb(0 84% 14%);
+    text-decoration: none;
+}
+
+.linkedin-class p a {
+    color: hwb(0 84% 14%);
+    text-decoration: none;
+}
+.copy-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    background-color: hwb(0 4% 96% / 0.982);
+    color: hwb(0 84% 14%);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.copy-right h1 {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top :1px;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mpacts</title>
+    <link rel="stylesheet" href="/src/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section id="navigation">
+        <div class="navbar">
+            <div class="navbar-left">
+                <h1>Mpacts</h1>
+            </div>
+            <div class="navbar-right">
+                <p><a href="services.html">Services</a></p>
+                <p><a href="#footer">Contact Us</a></p>
+                <p><a href="about.html">About</a></p>
+                <button class="nav-btn"><a href="#book-appointment">Book an Appointment</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="carousel">
+        <div class="carousel-container">
+            <div class="carousel-content">
+                <h1>MPACTS..</h1>
+                <h2>Major Projects Advisory & Consultancy Services.</h2>
+                <p>At Mpacts, we provide a wide range of services to facilitate improvement in alignment, productivity, organizational effectiveness, teambuilding and team relations to ensure superior project performance​.</p>
+            </div>
+        </div>
+    </section>
+    <section id="who-are-we">
+        <div class="who-we-container">
+            <div class="who-image">
+                <img src="/images/id4.jpg" alt="Who-we Image">
+            </div>
+            <div class="who-we-content">
+                <h1>Who are We!</h1>
+                <h2>Advice that Works</h2>
+                <p>MPACTS is a project management and consultancy firm that provides a wide range of services to facilitate improvement in alignment, productivity, organizational effectiveness, teambuilding and team relations to ensure superior project performance​. We aim to improve the client business performance through enabling execution excellence and effective project delivery and help business owners implement a solid execution plan and a robust contracting strategy for their projects</p>
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <div class="services-container">
+            <h1 class="service-head">Our Services</h1>
+            <div class="service-cards">
+                <div class="service-card">
+                    <i class="fa fa-code"></i>
+                    <h2>Project Management Talent Developement</h2>
+                    <p>Diverse learning solutions cover project management, risk, contracts, profitability, planning, and professional effectiveness.</p>
+                    <button class="service-btn"><a href="services.html#project-management">Read More</a></button>
+                </div>
+                <div class="service-card">
+                    <i class="fa fa-envira"></i>
+                    <h2>Executive Coaching for Senior Executives</h2>
+                    <p>Tailored coaching and mentoring programs for senior professionals, focusing on governance, reviews, sponsorship, and crisis management in mega projects.</p>
+                    <button class="service-btn"><a href="services.html#executive-coaching">Read More</a></button>
+                </div>
+                <div class="service-card">
+                    <i class="fa fa-connectdevelop"></i>
+                    <h2>Project Delivery Process Improvement</h2>
+                    <p>Streamlined work process improvements include workflows, interface management, advanced work packaging, construction planning, and digital tools for performance tracking.</p>
+                    <button class="service-btn"><a href="services.html#delivery-process">Read More</a></button>
+                </div>
+                <div class="service-card">
+                    <i class="fa fa-envira"></i>
+                    <h2>Consultancy for Project Delivery Assurance​</h2>
+                    <p>Comprehensive project and risk management services include governance improvement, strategy development, stakeholder alignment, rescue solutions, and customizable risk management tools.</p>
+                    <button class="service-btn"><a href="services.html#consultancy-management">Read More</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="why-us">
+        <div class="why-us-container">
+            <div class="why-image">
+                <img src="/images/id3.jpg" alt="Why-us Image">
+            </div>
+            <div class="why-us-content">
+                <h1>Why Us?</h1>
+                <h2>Prescriptions for Your Projects</h2>
+                <p>Our learning modules and methods follow the international best practices in Engineering and Construction industry covering all major industry domains such as Energy, Infrastructure, Ferrous Metals and Hydrocarbon Upstream and Downstream.​</p>
+                <p>We customize the training, coaching and effectiveness solutions to the business needs of customers.</p>
+            </div>
+        </div>
+    </section>
+    <section id="book-appointment" class="book-appointment">
+        <div class="appointment-container">
+            <h1 class="appointment-head">Book an Appointment</h1>
+            <form action="https://formspree.io/f/xkgnzjle" method="POST">
+                <fieldset>
+                    <legend>For person</legend>
+                    <label>
+                        Name
+                        <input type="text" name="name" required>
+                    </label>
+                    <div class="two-cols">
+                        <label>
+                            Email address
+                            <input type="email" name="email" required>
+                        </label>
+                        <label>
+                            Phone number
+                            <input type="tel" name="phone">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Appointment request</legend>
+                    <div class="two-cols">
+                        <label>
+                            Date
+                            <input type="date" name="Appointment request" required>
+                        </label>
+                        <div class="inline">
+                            <label>
+                                <input type="hidden" name="Morning desired" value="no">
+                                <input type="checkbox" name="Morning desired" value="yes">
+                                Morning
+                            </label>
+                            <label>
+                                <input type="hidden" name="Afternoon desired" value="no">
+                                <input type="checkbox" name="Afternoon desired" value="yes">
+                                Noon
+                            </label>
+                        </div>
+                    </div>
+                    <p>Confirmation requested by</p>
+                    <div class="inline">
+                        <label>
+                            <input type="radio" name="Confirmation requested by" value="email" checked>
+                            Email
+                        </label>
+                        <label>
+                            <input type="radio" name="Confirmation requested by" value="phone">
+                            Phone call
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="Data processing confirmed" value="Yes" required>
+                            <span>I agree to the processing of my data for the handling of my request by <a href="https://mpacts.in" target="_blank">Mpacts</a>.</span>
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="btns">
+                    <input type="text" name="_gotcha" value="" style="display:none;">
+                    <input type="submit" value="Submit request">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-card1">
+                <h1>About Us</h1>
+                <p>Mpacts mission is to help project owners, consultants and Contractors to achieve efficiency and excellence in project Management and Executive Coaching</p>
+            </div>
+            <div class="footer-card2">
+                <div class="h1-class">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="mail-class">
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:mpacts@gmail.com">mpacts@gmail.com</a></p>
+                </div>
+                <div class="phone-class">
+                    <i class="fa fa-phone"></i>
+                    <p><a href="tel:+91 9940636898">+91 9940636898</a></p>
+                </div>
+                <div class="youtube-class">
+                    <i class="fa fa-youtube"></i>
+                    <p><a href="">Mpacts</a></p>
+                </div>
+                <div class="linkedin-class">
+                    <i class="fa fa-linkedin"></i>
+                    <p><a href="https://www.youtube.com/channel/UCEpnj9NHhpxgVZWL1uGjGuw">Linkedin-Mpacts</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <h1>Copyright@Mpacts.in</h1>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
